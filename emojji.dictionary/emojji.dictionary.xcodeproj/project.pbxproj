@@ -96,8 +96,7 @@
 				TargetAttributes = {
 					CA23EC461DADDC4A0078A802 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Z2J252DC4F;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -261,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z2J252DC4F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = emojji.dictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nexthop.emojji-dictionary";
@@ -274,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z2J252DC4F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = emojji.dictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nexthop.emojji-dictionary";
