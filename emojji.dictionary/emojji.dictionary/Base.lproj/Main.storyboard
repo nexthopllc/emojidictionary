@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emojji_dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="15F-Lv-sKX">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="15F-Lv-sKX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0Xz-Hb-7Pe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="15F-Lv-sKX" secondAttribute="bottom" id="2e9-N1-bJH"/>
+                            <constraint firstAttribute="trailing" secondItem="15F-Lv-sKX" secondAttribute="trailing" id="Ewq-yB-RWV"/>
+                            <constraint firstItem="15F-Lv-sKX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="egh-wT-BSm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cooltableview" destination="15F-Lv-sKX" id="Piu-jY-be9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g50-pc-jpo">
+            <objects>
+                <viewController id="Ks5-1W-ga8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTb-Wb-G5X"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Pm-al-lgz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pXg-Vp-8aF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geE-5j-VAa">
+                                <string key="text">💒
+wedding
+Unicode: U+1F492, UTF-8: F0 9F 92 92
+face with stuck-out tongue
+Unicode: U+1F61B, UTF-8: F0 9F 98 9</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="196"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiw-69-vvy">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="geE-5j-VAa" firstAttribute="top" secondItem="aTb-Wb-G5X" secondAttribute="bottom" constant="20" id="FpI-5M-lFz"/>
+                            <constraint firstItem="geE-5j-VAa" firstAttribute="centerX" secondItem="pXg-Vp-8aF" secondAttribute="centerX" id="QYK-af-qfN"/>
+                            <constraint firstItem="aiw-69-vvy" firstAttribute="top" secondItem="geE-5j-VAa" secondAttribute="bottom" constant="20" id="SEl-kR-ApF"/>
+                            <constraint firstItem="aiw-69-vvy" firstAttribute="centerX" secondItem="pXg-Vp-8aF" secondAttribute="centerX" id="Vhv-aF-ahh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ih4-dc-eva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="38"/>
         </scene>
     </scenes>
 </document>
